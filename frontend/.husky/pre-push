@@ -1,0 +1,23 @@
+# Read remote refs from stdin (format: <local ref> <local sha> <remote ref> <remote sha>)
+while read local_ref local_sha remote_ref remote_sha; do
+  remote_branch="${remote_ref##refs/heads/}"
+
+  # Block direct pushes TO 'main' or 'develop' on the remote
+  if [ "$remote_branch" = "main" ] || [ "$remote_branch" = "develop" ]; then
+    echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    echo "ERROR: DIRECT PUSH TO PROTECTED BRANCH BLOCKED"
+    echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    echo ""
+    echo "You are trying to push directly to '$remote_branch' on the remote."
+    echo "We use strict Git Flow."
+    echo ""
+    echo "ACTION REQUIRED:"
+    echo "1. Create a feature branch: git checkout -b feat/your-feature"
+    echo "2. Push that branch instead"
+    echo "3. Open a Pull Request on GitHub"
+    echo ""
+    exit 1
+  fi
+done
+
+npm test

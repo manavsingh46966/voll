@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+dist/
+
+# Expo
+frontend/.expo/
+frontend/web-build/
+
+# Coverage & build artifacts
+frontend/coverage/
+new_backend/dist/
+
+# OS
+.DS_Store
+Thumbs.db

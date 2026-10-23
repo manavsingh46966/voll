@@ -1,0 +1,16 @@
+export const SUGGESTED_INTERESTS = [
+  "Lifestyle",
+  "Women Empowerment",
+  "Spiritual",
+  "Health and Fitness",
+  "Seminar",
+  "Safety",
+  "Education",
+  "Charity",
+  "Child Care",
+  "Weekend Volunteering",
+  "Online Volunteering",
+  "Internships",
+  "Short Internships",
+  "Live Projects",
+] as const;

@@ -1,0 +1,1 @@
+Shuffle JWT key every few hours. (keep previous key(s) in memory too, until actual expiry.)

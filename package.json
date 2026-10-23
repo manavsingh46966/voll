@@ -1,0 +1,12 @@
+{
+  "name": "volstory",
+  "private": true,
+  "description": "Volstory monorepo — frontend (Expo/React Native) + new_backend (Express/MongoDB)",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  }
+}

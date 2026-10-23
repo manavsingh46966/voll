@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1086790487637",
+    "project_id": "volstory-c012e",
+    "storage_bucket": "volstory-c012e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086790487637:android:66be7a39e5d22503d48edc",
+        "android_client_info": {
+          "package_name": "com.volstory.reactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086790487637-694ko28mu54isjca2clkegsclfbvjdi6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.volstory.reactnative",
+            "certificate_hash": "0ed2c87312c69b0c9874af2d51a4ada99a433040"
+          }
+        },
+        {
+          "client_id": "1086790487637-b07jd7m5q0vcesn3mv60l4644cd81b3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.volstory.reactnative",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1086790487637-c7km63istuu2sa2c86iqiemg0j8thd4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAYQUeDsa0YkrgFFsZYe0tzhCgTDRtUb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086790487637-c7km63istuu2sa2c86iqiemg0j8thd4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

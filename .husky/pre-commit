@@ -1,0 +1,11 @@
+# Run lint-staged in frontend if any frontend files are staged
+if git diff --cached --name-only | grep -q "^frontend/"; then
+  echo "Running lint-staged in frontend..."
+  cd frontend && npx lint-staged && cd ..
+fi
+
+# Run lint-staged in new_backend if any backend files are staged
+if git diff --cached --name-only | grep -q "^new_backend/"; then
+  echo "Running lint-staged in new_backend..."
+  cd new_backend && npx lint-staged && cd ..
+fi
